@@ -1,0 +1,65 @@
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url("Pictures/cortlandthibodeau.png") no-repeat;
+    background-size: cover;
+}
+
+.center-div {
+    position: absolute;
+    z-index: 12;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+}
+
+.circular-image {
+    height: 120px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.center-horiz{
+    display: block;
+    margin: auto;
+}
+
+.title {
+    font-size:30px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.title > font {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-align-center{
+    text-align:center;
+}
+
+.icon{
+    color: white;
+}
+
+.icon:hover{
+    color: #59D3B4;
+}

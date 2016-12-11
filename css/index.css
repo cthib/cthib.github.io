@@ -1,3 +1,12 @@
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url("../Pictures/cortlandthibodeau.png") #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
 video#bgvid {
     position: fixed;
     top: 50%;
@@ -44,8 +53,8 @@ video#bgvid {
 .title {
     font-size:30px;
     text-transform: uppercase;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .title > font {
@@ -61,5 +70,5 @@ video#bgvid {
 }
 
 .icon:hover{
-    color: #D3D3D3;
+    color: grey;
 }

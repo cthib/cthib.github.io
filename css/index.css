@@ -1,6 +1,6 @@
 @media screen and (max-device-width: 800px) {
     html {
-         background: url("../Pictures/cortlandthibodeau.png") #000 no-repeat center center fixed;
+         background: url("../img/cortlandthibodeau.png") #000 no-repeat center center fixed;
     }
     #bgvid {
         display: none;

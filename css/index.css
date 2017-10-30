@@ -5,6 +5,14 @@
     #bgvid {
         display: none;
     }
+
+    .info-card-body > .info-card-title { 
+        font-size: 24px; 
+    }
+    
+    .info-card-body > .info-card-desc {
+        font-size: 12px; 
+    }
 }
 
 video#bgvid {

@@ -54,7 +54,7 @@ body {
 }
 
 .top-bar-btn:hover {
-    color: grey;
+    color: transparent;
 }
 
 /* Bands */
@@ -339,6 +339,10 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    body {
+        background-attachment: initial;
+    }
 
     .info-card-stack {
         margin-bottom: 35px

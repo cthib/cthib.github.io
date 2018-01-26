@@ -1,9 +1,349 @@
-@media screen and (max-device-width: 800px) {
-    html {
-         background: url("../img/cortlandthibodeau.png") #000 no-repeat center center fixed;
+/* 
+ * Cortland Thibodeau Resume CSS
+ * 2018
+*/
+
+body {
+    background-image: url("img/bg/trees.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    transition: background 0.4s linear;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.icon {
+    padding-top: 15px;
+    color: white;
+}
+
+.icon:hover {
+    color: grey;
+}
+
+/* Top bar */
+
+.top-bar {
+    width: 100%; 
+    background-color: transparent; 
+    height: 30px; 
+    padding: 10px; 
+    position: relative; 
+    font-family: 'Lato', sans-serif;
+}
+
+.top-bar > .top-bar-title {
+    color: rgb(44, 44, 44); 
+    position: absolute
+}
+
+.top-bar > .top-bar-right {
+    right: 0
+}
+
+.top-bar-btn {
+    padding-top: 8px;
+    color: rgb(44, 44, 44);
+}
+
+.top-bar-btn:hover {
+    color: grey
+}
+
+/* Bands */
+
+.band-title {
+    font-family: 'Contrail One', cursive;
+    color: rgba(255, 255, 255, 0.98);
+    font-size: 30px;
+}
+
+.band-top {
+    padding-top: 80px;
+    padding-bottom: 50px
+}
+
+.band-mid {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.band-btm {
+    padding-top: 50px;
+    padding-bottom: 80px
+}
+
+.sm-center {
+    max-width: 400px; 
+    margin: 0 auto;
+}
+
+.lg-center {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.md-center {
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+.lg-center {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cards */
+
+.info-card {
+    background-color: rgba(255, 255, 255, 0.99);
+    margin-top: 47px; 
+    border-radius: 5px;
+    float: left;
+}
+
+.info-card-stack {
+    margin-bottom: 20px;
+}
+
+.info-card > .half-img {
+    margin-top: -45px;
+}
+
+.info-card > .half-img > img {
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.99);
+}
+
+.info-card-body {
+    padding: 0px 20px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.info-card-lg > .info-card-body > .info-card-title { 
+    font-family: 'Halant', serif;
+    font-size: 30px; 
+    margin-top: 10px;
+}
+
+.info-card-lg >  .info-card-body > .info-card-subtitle { 
+    font-size: 15px;
+}
+
+.info-card-lg >  .info-card-body > .info-card-desc {
+    font-size: 17px;
+}
+
+.info-card-sm > .info-card-body > .info-card-title { 
+    font-family: 'Halant', serif;
+    font-size: 20px; 
+    margin-top: 10px;
+}
+
+.info-card-sm >  .info-card-body > .info-card-subtitle { 
+    font-size: 15px;
+}
+
+.info-card-sm >  .info-card-body > .info-card-desc {
+    font-size: 17px;
+}
+
+.info-card-list-body {
+    padding: 35px 20px 10px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.info-card-list-body > .info-list {
+    padding-left: 35px; 
+    padding-top: 10px; 
+    font-size: 17px;
+}
+
+.info-card-header > .header-img {
+    height: 45px; 
+    display: inline-block; 
+    margin-top: -25px;
+} 
+
+.info-card-header > .header-text  {
+    display: inline-block;
+    font-family: 'Lato', sans-serif; 
+    padding: 5px;
+} 
+
+.header-text > .header-title {
+    font-family: 'Halant', serif; 
+    font-size: 18px
+}
+
+/* Specific Cards */
+
+.quote-card {
+    min-height: 210px;
+}
+
+.job-card {
+    min-height: 340px;
+}
+
+/* Side and top panels */
+
+.side-panel {
+    border-radius: 5px;
+     /* https://media.giphy.com/media/xT1Ra3cc1B7jyy2z9S/giphy.gif */
+    background-image: url('../img/gif/biking.gif'); 
+    background-size: cover; 
+    background-position: -250px 50%; 
+    background-repeat: repeat-x;
+}
+
+.side-panel-blank {
+    background-color: transparent; 
+    min-height: 100px;
+}
+
+.side-panel-content {
+    background-color: white; 
+    border-radius: 0 5px 5px 0; 
+    padding: 35px
+}
+
+
+.top-panel {
+    border-radius: 5px;
+    /* https://media.giphy.com/media/l3dizfqpWu5B5rdIc/giphy.gif */
+    background-image: url('../img/gif/skiing.gif'); 
+    background-size: cover; 
+    padding: 0;
+    background-position: 50% -50px; 
+    background-repeat: repeat-y;
+}
+
+.top-panel-blank {
+    background-color: transparent; 
+    min-height: 300px;
+    padding: 0px
+}
+
+.top-panel-content {
+    background-color: white; 
+    border-radius: 0 0 5px 5px; 
+    width: 100%;
+    padding: 35px
+}
+
+.side-panel-content > p, .top-panel-content > p {
+    font-size: 17px; 
+    font-family: 'Lato', sans-serif;
+}
+
+/* Skills */
+
+.skill-list {
+    padding: 0; 
+    list-style: none; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+.skill-list > li {
+    margin-top: 5px;
+    position: relative; 
+    height: 30px;
+}
+
+.skill {
+    position: absolute; 
+    background-color: grey; 
+    left: 0; 
+    top: 0;
+    height: 100%;
+    padding: 5px 10px;
+}
+
+.skill > p {
+    position: absolute; 
+    color: white;
+    font-size: 15px; 
+    font-family: 'Lato', sans-serif;
+}
+
+.skill > .skill-rating {
+    right: 0;
+    padding-right: 15px
+}
+
+.skill-scores {
+    position: absolute;
+    left: 0; 
+    top: 0;
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+    height: 11px;
+    border-bottom: 1px solid grey; 
+}
+
+.skill-scores > p {
+    position: absolute; 
+    font-size: 15px; 
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 20px;
+    padding: 0 5px;
+}
+
+.skill-scores > .skill-high {
+    right: 0;
+    padding-right: 10px
+}
+
+.skill-scores > .skill-low {
+    padding-left: 10px
+}
+
+.skill-secondary {
+    padding: 2px 5px;
+}
+
+.skill-secondary > p {
+    padding: 3px;
+    font-size: 15px; 
+    font-family: 'Lato', sans-serif;
+    background-color: lightgray;
+}
+
+/* Links */
+
+.contact-panel:hover {
+    text-decoration: none;
+}
+
+.contact-panel:hover > .top-panel-blank > .contact-panel-content {
+    mix-blend-mode: difference;
+}
+
+.contact-panel-content {
+    font-family: 'Contrail One', cursive;
+    color: white;
+    font-size: 30px;
+    padding-top: 110px;
+}
+
+@media (max-width: 768px) {
+
+    .info-card-stack {
+        margin-bottom: 35px
     }
-    #bgvid {
-        display: none;
+
+    .info-card {
+        margin-top: 35px
+
     }
 
     .info-card-body > .info-card-title { 
@@ -21,85 +361,17 @@
     .half-img > img {
         height: 60px;
     }
-}
 
-video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url("../Pictures/cortlandthibodeau.png") no-repeat;
-    background-size: cover;
-}
+    .side-panel {
+        background-repeat: repeat-y;
+        background-position: 50% -140px; 
+    }
 
-.center-div {
-    position: absolute;
-    z-index: 12;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    max-width: 700px;
-}
+    .side-panel-blank { 
+        min-height: 200px;
+    }
 
-.half-img {
-    margin-top: -45px;
-}
-
-.half-img > img {
-    height: 90px;
-    border-radius: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    border: 3px solid rgba(255, 255, 255, 0.98);
-}
-
-.info-card {
-    background-color: rgba(255, 255, 255, 0.98); 
-    border-radius: 5px;
-}
-
-.info-card-body {
-    padding: 0px 20px 20px
-}
-
-.info-card-body > .info-card-title { 
-    font-size: 30px; 
-    margin-top: 10px;
-    font-family: 'Halant', serif;
-}
-
-.info-card-body > .info-card-desc {
-    font-size: 17px; 
-    font-family: 'Lato', sans-serif;
-}
-
-.icon {
-    padding-top: 15px;
-    color: white;
-}
-
-.icon:hover {
-    color: grey;
-}
-
-.center-horiz {
-    display: block;
-    margin: auto;
-}
-
-.text-align-center {
-    text-align:center;
+    .side-panel-content {
+        border-radius: 0 0 5px 5px; 
+    }
 }

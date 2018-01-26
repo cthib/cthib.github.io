@@ -1,4 +1,4 @@
-if (screen.width > 768 ){
+if (document.documentElement.clientWidth > 768 ){
   var $target = $('body');
   inView.offset(500);
   inView('.change-bg').on('enter', function(el){

@@ -340,8 +340,20 @@ body {
 
 @media (max-width: 768px) {
 
-    body {
-        background-attachment: initial;
+    body:after {
+        content: "";
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-image: none;
+        background: url(../img/bg/trees/trees.jpg) center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     .info-card-stack {

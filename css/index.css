@@ -21,6 +21,15 @@ body {
     text-align: center;
 }
 
+.text-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.text-link:hover {
+    color: darkgray;
+}
+
 .icon {
     padding-top: 15px;
     color: white;
